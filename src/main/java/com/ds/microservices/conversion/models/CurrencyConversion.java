@@ -80,4 +80,17 @@ public class CurrencyConversion {
     public void setCalculatedAmount(BigDecimal calculatedAmount) {
         this.calculatedAmount = calculatedAmount;
     }
+
+    @Override
+    public String toString() {
+        return "CurrencyConversion{" +
+                "id=" + id +
+                ", from='" + from + '\'' +
+                ", to='" + to + '\'' +
+                ", conversionMultiple=" + conversionMultiple +
+                ", port=" + port +
+                ", amount=" + amount +
+                ", calculatedAmount=" + calculatedAmount +
+                '}';
+    }
 }
